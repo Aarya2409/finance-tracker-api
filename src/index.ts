@@ -1,5 +1,7 @@
 import express from 'express';
 import morgan from 'morgan';
+import routes from './routes';
+
 import { errorHandler, NotFoundError } from './middleware/errorHandler';
 
 const app = express();
@@ -16,6 +18,9 @@ app.get('/api/health', (req, res) => {
     timestamp: new Date().toISOString(),
   });
 });
+
+app.use('/api', routes);
+
 
 // 404 handler - catches any route that doesn't exist
 app.use((req, res, next) => {
