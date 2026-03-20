@@ -1,5 +1,9 @@
 # Finance Tracker API
 
+
+## Live API
+Base URL: `https://finance-tracker-api-1-uvuw.onrender.com`
+
 A RESTful API for personal finance management built with Node.js, TypeScript, Express, PostgreSQL, and Prisma.
 
 ## Tech Stack
@@ -129,3 +133,4 @@ Request → Rate Limiter → Helmet → CORS
         → PostgreSQL
         → Response
 ```
+
